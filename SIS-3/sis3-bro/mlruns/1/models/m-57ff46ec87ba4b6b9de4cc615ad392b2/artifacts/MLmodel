@@ -1,0 +1,23 @@
+artifact_path: /Users/madiyarbekmutat/Desktop/3_year/Winter/Machine_learning/SIS/SIS-3/sis3-bro/mlruns/1/models/m-57ff46ec87ba4b6b9de4cc615ad392b2/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.1
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+mlflow_version: 3.11.1
+model_id: m-57ff46ec87ba4b6b9de4cc615ad392b2
+model_size_bytes: 410548
+model_uuid: m-57ff46ec87ba4b6b9de4cc615ad392b2
+prompts: null
+run_id: 191eeac4f538453aa723eed9244d838c
+utc_time_created: '2026-04-24 16:26:09.676339'
