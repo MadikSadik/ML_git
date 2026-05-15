@@ -1,0 +1,3 @@
+python -m uvicorn api.main:app --reload
+python monitoring/drift.py
+python -m mlflow

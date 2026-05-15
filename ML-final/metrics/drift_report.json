@@ -1,0 +1,115 @@
+{
+    "drift_detected": false,
+    "features": {
+        "price_new": {
+            "ks_statistic": 0.0,
+            "p_value": 1.0,
+            "drift": false
+        },
+        "price_resale": {
+            "ks_statistic": 0.0,
+            "p_value": 1.0,
+            "drift": false
+        },
+        "rent": {
+            "ks_statistic": 0.0,
+            "p_value": 1.0,
+            "drift": false
+        },
+        "idx_mom_new": {
+            "ks_statistic": 0.0,
+            "p_value": 1.0,
+            "drift": false
+        },
+        "idx_mom_rent": {
+            "ks_statistic": 0.0,
+            "p_value": 1.0,
+            "drift": false
+        },
+        "idx_mom_resale": {
+            "ks_statistic": 0.0,
+            "p_value": 1.0,
+            "drift": false
+        },
+        "idx_yoy_new": {
+            "ks_statistic": 0.0,
+            "p_value": 1.0,
+            "drift": false
+        },
+        "idx_yoy_rent": {
+            "ks_statistic": 0.0,
+            "p_value": 1.0,
+            "drift": false
+        },
+        "idx_yoy_resale": {
+            "ks_statistic": 0.0,
+            "p_value": 1.0,
+            "drift": false
+        },
+        "usd_kzt_avg": {
+            "ks_statistic": 0.0,
+            "p_value": 1.0,
+            "drift": false
+        },
+        "base_rate": {
+            "ks_statistic": 0.0,
+            "p_value": 1.0,
+            "drift": false
+        },
+        "cpi_mom": {
+            "ks_statistic": 0.0,
+            "p_value": 1.0,
+            "drift": false
+        },
+        "cpi_ytd_dec": {
+            "ks_statistic": 0.0,
+            "p_value": 1.0,
+            "drift": false
+        },
+        "cpi_yoy": {
+            "ks_statistic": 0.0,
+            "p_value": 1.0,
+            "drift": false
+        },
+        "ipi_mom": {
+            "ks_statistic": 0.0,
+            "p_value": 1.0,
+            "drift": false
+        },
+        "construction_mom": {
+            "ks_statistic": 0.0,
+            "p_value": 1.0,
+            "drift": false
+        },
+        "population_start": {
+            "ks_statistic": 0.0,
+            "p_value": 1.0,
+            "drift": false
+        },
+        "population_growth": {
+            "ks_statistic": 0.0,
+            "p_value": 1.0,
+            "drift": false
+        },
+        "natural_increase": {
+            "ks_statistic": 0.0,
+            "p_value": 1.0,
+            "drift": false
+        },
+        "net_migration": {
+            "ks_statistic": 0.0,
+            "p_value": 1.0,
+            "drift": false
+        },
+        "population_end": {
+            "ks_statistic": 0.0,
+            "p_value": 1.0,
+            "drift": false
+        },
+        "growth_rate_pct": {
+            "ks_statistic": 0.0,
+            "p_value": 1.0,
+            "drift": false
+        }
+    }
+}

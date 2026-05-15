@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Attrition Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Attrition Prediction</h1>
+
+    <div class="form">
+
+        <input id="Age" placeholder="Age">
+        <input id="MonthlyIncome" placeholder="Monthly Income">
+        <input id="DistanceFromHome" placeholder="Distance From Home">
+        <input id="TotalWorkingYears" placeholder="Total Working Years">
+
+        <select id="OverTime">
+            <option value="1">OverTime Yes</option>
+            <option value="0">OverTime No</option>
+        </select>
+
+        <button onclick="predict()">Predict</button>
+
+        <h2 id="result"></h2>
+
+    </div>
+
+</div>
+
+<script>
+async function predict() {
+
+    const data = {
+        Age: parseFloat(document.getElementById("Age").value),
+        MonthlyIncome: parseFloat(document.getElementById("MonthlyIncome").value),
+        DistanceFromHome: parseFloat(document.getElementById("DistanceFromHome").value),
+        TotalWorkingYears: parseFloat(document.getElementById("TotalWorkingYears").value),
+        OverTime: parseFloat(document.getElementById("OverTime").value),
+
+        EnvironmentSatisfaction: 3,
+        JobInvolvement: 3,
+        JobSatisfaction: 3,
+        StockOptionLevel: 1,
+        TrainingTimesLastYear: 2,
+        WorkLifeBalance: 3,
+        YearsAtCompany: 5,
+        YearsSinceLastPromotion: 1,
+        NumCompaniesWorked: 2,
+        Stagnation_Score: 0.5,
+        Overload_Index: 0.3,
+        Income_Per_Year: 120000,
+
+        BusinessTravel: 1
+    };
+
+    const response = await fetch("/predict", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(data)
+    });
+
+    const result = await response.json();
+
+    document.getElementById("result").innerText =
+        "Prediction: " + result.prediction +
+        " | Probability: " + result.probability;
+}
+</script>
+
+</body>
+</html>

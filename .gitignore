@@ -1,0 +1,20 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# macOS system files
+.DS_Store
+
+# Data and Models
+*.pkl
+*.csv
+*.joblib
+
+# MLflow
+mlruns/
+mlflow.db
+
+# Virtual Environments
+venv/
+tf_env/
